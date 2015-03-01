@@ -10,4 +10,23 @@ import UIKit
 
 class DiagnosedHappinessViewController: HappinessViewController {
     
+    var diagnosticHistory = [Int]()
+    
+    private struct History {
+        static let segueIdentifier = "Show Diagnostic History"
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            switch identifier {
+            case History.segueIdentifier:
+                if let tvc = segue.destinationViewController as? TextViewController {
+                    tvc.text = "\(diagnosticHistory)"
+                }
+            default: break
+            }
+        }
+    }
+    
 }

@@ -22,6 +22,21 @@ class TextViewController: UIViewController {
         }
     }
     
+    override var preferredContentSize: CGSize {
+        get {
+            // following says set the view size so that pop over displays the 
+            // history array and no extra space.
+            if textView != nil && presentingViewController != nil {
+                return textView.sizeThatFits(presentingViewController!.view.bounds.size)
+            } else {
+                return super.preferredContentSize
+            }
+        }
+        set {
+            super.preferredContentSize = newValue
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -170,7 +170,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XY-N9-f56">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XY-N9-f56">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -179,6 +179,12 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0XY-N9-f56" secondAttribute="trailing" id="CRe-BM-Xnr"/>
+                            <constraint firstItem="0XY-N9-f56" firstAttribute="leading" secondItem="R1R-gi-KQE" secondAttribute="leading" id="Dlk-lE-I6A"/>
+                            <constraint firstItem="0XY-N9-f56" firstAttribute="top" secondItem="R1R-gi-KQE" secondAttribute="top" id="SBG-S1-GX5"/>
+                            <constraint firstItem="0XY-N9-f56" firstAttribute="bottom" secondItem="aKJ-Pa-ULj" secondAttribute="top" id="YnM-EL-cD5"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="textView" destination="0XY-N9-f56" id="MPw-pp-ewa"/>

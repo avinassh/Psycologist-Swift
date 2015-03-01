@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		829BDA551AA31C47006AAC4F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BDA541AA31C47006AAC4F /* TextViewController.swift */; };
+		829BDA571AA31F7B006AAC4F /* DiagnosedHappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BDA561AA31F7B006AAC4F /* DiagnosedHappinessViewController.swift */; };
 		82ED17871AA2F538003509F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED17861AA2F538003509F6 /* AppDelegate.swift */; };
 		82ED17891AA2F538003509F6 /* PsycologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED17881AA2F538003509F6 /* PsycologistViewController.swift */; };
 		82ED178C1AA2F538003509F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82ED178A1AA2F538003509F6 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		829BDA541AA31C47006AAC4F /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		829BDA561AA31F7B006AAC4F /* DiagnosedHappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosedHappinessViewController.swift; sourceTree = "<group>"; };
 		82ED17811AA2F538003509F6 /* Psycologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psycologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82ED17851AA2F538003509F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82ED17861AA2F538003509F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				82ED17A61AA30640003509F6 /* FaceView.swift */,
 				82ED17A81AA3065B003509F6 /* HappinessViewController.swift */,
 				829BDA541AA31C47006AAC4F /* TextViewController.swift */,
+				829BDA561AA31F7B006AAC4F /* DiagnosedHappinessViewController.swift */,
 				82ED178A1AA2F538003509F6 /* Main.storyboard */,
 				82ED178D1AA2F538003509F6 /* Images.xcassets */,
 				82ED178F1AA2F538003509F6 /* LaunchScreen.xib */,
@@ -224,6 +227,7 @@
 				829BDA551AA31C47006AAC4F /* TextViewController.swift in Sources */,
 				82ED17891AA2F538003509F6 /* PsycologistViewController.swift in Sources */,
 				82ED17871AA2F538003509F6 /* AppDelegate.swift in Sources */,
+				829BDA571AA31F7B006AAC4F /* DiagnosedHappinessViewController.swift in Sources */,
 				82ED17A91AA3065B003509F6 /* HappinessViewController.swift in Sources */,
 				82ED17A71AA30640003509F6 /* FaceView.swift in Sources */,
 			);

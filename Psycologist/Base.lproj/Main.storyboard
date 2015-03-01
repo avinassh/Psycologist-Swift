@@ -30,7 +30,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bJ7-C7-PQJ" kind="showDetail" identifier="happy" id="H9o-mc-6Ta"/>
+                                    <segue destination="CXw-rF-4gi" kind="showDetail" identifier="happy" id="H9o-mc-6Ta"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeV-PA-4th">
@@ -40,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bJ7-C7-PQJ" kind="showDetail" identifier="sad" id="6Et-Z4-QBX"/>
+                                    <segue destination="CXw-rF-4gi" kind="showDetail" identifier="sad" id="6Et-Z4-QBX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWa-le-l9j">
@@ -50,7 +50,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bJ7-C7-PQJ" kind="showDetail" identifier="meh" id="NfL-Kz-VUi"/>
+                                    <segue destination="CXw-rF-4gi" kind="showDetail" identifier="meh" id="NfL-Kz-VUi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,7 +89,7 @@
                 <splitViewController id="Tmc-6j-4HO" sceneMemberID="viewController">
                     <connections>
                         <segue destination="zAg-d4-p0c" kind="relationship" relationship="masterViewController" id="652-hT-A5Z"/>
-                        <segue destination="bJ7-C7-PQJ" kind="relationship" relationship="detailViewController" id="LRh-Bm-T5j"/>
+                        <segue destination="CXw-rF-4gi" kind="relationship" relationship="detailViewController" id="LRh-Bm-T5j"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUo-ao-JoV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -136,6 +136,7 @@
                             <constraint firstItem="dC6-ka-zpd" firstAttribute="leading" secondItem="ohM-9v-efw" secondAttribute="leading" id="NFm-jC-S1g"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Ljb-Xy-6Z1"/>
                     <connections>
                         <outlet property="faceView" destination="dC6-ka-zpd" id="wtF-4W-DB1"/>
                     </connections>
@@ -147,7 +148,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="238" y="117"/>
+            <point key="canvasLocation" x="1050" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iRO-FW-Q8h">
@@ -167,8 +168,26 @@
             </objects>
             <point key="canvasLocation" x="238" y="-741"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b9I-T0-YBr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CXw-rF-4gi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="093-kx-j9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bJ7-C7-PQJ" kind="relationship" relationship="rootViewController" id="KAJ-bq-BCr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4y-In-mkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="117"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6Et-Z4-QBX"/>
+        <segue reference="NfL-Kz-VUi"/>
     </inferredMetricsTieBreakers>
 </document>

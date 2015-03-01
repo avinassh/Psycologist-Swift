@@ -37,6 +37,7 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
         // is actually nil. So it crashes. Making it optional fixes the problem.
         // if it's nil, call for setNeedsDisplay is ignored.
         faceView?.setNeedsDisplay()
+        title = "\(happiness)"
     }
     
     func smilinessForFaceView(sender: FaceView) -> Double? {

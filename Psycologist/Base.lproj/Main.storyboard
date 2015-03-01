@@ -30,7 +30,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bJ7-C7-PQJ" kind="showDetail" id="H9o-mc-6Ta"/>
+                                    <segue destination="bJ7-C7-PQJ" kind="showDetail" identifier="happy" id="H9o-mc-6Ta"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeV-PA-4th">
@@ -40,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bJ7-C7-PQJ" kind="showDetail" id="6Et-Z4-QBX"/>
+                                    <segue destination="bJ7-C7-PQJ" kind="showDetail" identifier="sad" id="6Et-Z4-QBX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWa-le-l9j">

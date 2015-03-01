@@ -136,7 +136,15 @@
                             <constraint firstItem="dC6-ka-zpd" firstAttribute="leading" secondItem="ohM-9v-efw" secondAttribute="leading" id="NFm-jC-S1g"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ljb-Xy-6Z1"/>
+                    <navigationItem key="navigationItem" id="Ljb-Xy-6Z1">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="vOn-ZR-JV4">
+                            <connections>
+                                <segue destination="N0n-ua-vUU" kind="popoverPresentation" identifier="Show Diagnostic History" popoverAnchorBarButtonItem="vOn-ZR-JV4" id="sb6-PY-lmn">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="faceView" destination="dC6-ka-zpd" id="wtF-4W-DB1"/>
                     </connections>
@@ -149,6 +157,24 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1050" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6ix-Ap-Ngv">
+            <objects>
+                <viewController id="N0n-ua-vUU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7x1-5m-uad"/>
+                        <viewControllerLayoutGuide type="bottom" id="aKJ-Pa-ULj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R1R-gi-KQE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTF-pu-nfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iRO-FW-Q8h">

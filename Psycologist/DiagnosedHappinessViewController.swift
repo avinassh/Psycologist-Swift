@@ -12,6 +12,14 @@ class DiagnosedHappinessViewController: HappinessViewController {
     
     var diagnosticHistory = [Int]()
     
+    override var happiness: Int {
+        didSet {
+            // when a property is overridden, the instructions didSet will
+            // copied, will be run first and then following will run
+            diagnosticHistory += [happiness]
+        }
+    }
+    
     private struct History {
         static let segueIdentifier = "Show Diagnostic History"
     }

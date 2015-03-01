@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		82ED17871AA2F538003509F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED17861AA2F538003509F6 /* AppDelegate.swift */; };
-		82ED17891AA2F538003509F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED17881AA2F538003509F6 /* ViewController.swift */; };
+		82ED17891AA2F538003509F6 /* PsycologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED17881AA2F538003509F6 /* PsycologistViewController.swift */; };
 		82ED178C1AA2F538003509F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82ED178A1AA2F538003509F6 /* Main.storyboard */; };
 		82ED178E1AA2F538003509F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82ED178D1AA2F538003509F6 /* Images.xcassets */; };
 		82ED17911AA2F538003509F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82ED178F1AA2F538003509F6 /* LaunchScreen.xib */; };
@@ -29,7 +29,7 @@
 		82ED17811AA2F538003509F6 /* Psycologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psycologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82ED17851AA2F538003509F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82ED17861AA2F538003509F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82ED17881AA2F538003509F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82ED17881AA2F538003509F6 /* PsycologistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsycologistViewController.swift; sourceTree = "<group>"; };
 		82ED178B1AA2F538003509F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82ED178D1AA2F538003509F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		82ED17901AA2F538003509F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				82ED17861AA2F538003509F6 /* AppDelegate.swift */,
-				82ED17881AA2F538003509F6 /* ViewController.swift */,
+				82ED17881AA2F538003509F6 /* PsycologistViewController.swift */,
 				82ED178A1AA2F538003509F6 /* Main.storyboard */,
 				82ED178D1AA2F538003509F6 /* Images.xcassets */,
 				82ED178F1AA2F538003509F6 /* LaunchScreen.xib */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82ED17891AA2F538003509F6 /* ViewController.swift in Sources */,
+				82ED17891AA2F538003509F6 /* PsycologistViewController.swift in Sources */,
 				82ED17871AA2F538003509F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +407,7 @@
 				82ED17A21AA2F538003509F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82ED17A31AA2F538003509F6 /* Build configuration list for PBXNativeTarget "PsycologistTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				82ED17A51AA2F538003509F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

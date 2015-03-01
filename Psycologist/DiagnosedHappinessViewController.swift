@@ -10,7 +10,19 @@ import UIKit
 
 class DiagnosedHappinessViewController: HappinessViewController {
     
-    var diagnosticHistory = [Int]()
+    // following array will be created whenever a button is pressed. So its not
+    // really saving the history. Hence lets use NSUserDefaults
+    // var diagnosticHistory = [Int]()
+    
+    private let defaults = NSUserDefaults.standardUserDefaults()
+    var diagnosticHistory: [Int] {
+        get {
+            return defaults.objectForKey(History.defaultsKey) as? [Int] ?? []
+        }
+        set {
+           defaults.setObject(newValue, forKey: History.defaultsKey)
+        }
+    }
     
     override var happiness: Int {
         didSet {
@@ -22,6 +34,7 @@ class DiagnosedHappinessViewController: HappinessViewController {
     
     private struct History {
         static let segueIdentifier = "Show Diagnostic History"
+        static let defaultsKey = "DiagnosedHappinessViewController.History"
     }
     
     

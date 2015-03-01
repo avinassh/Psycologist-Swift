@@ -32,7 +32,11 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
     }
     
     private func updateUI() {
-        faceView.setNeedsDisplay()
+        // from prepareForSegue, we set the happiness which tries to 
+        // updateUI(), however IBOutlets are not set at this point and faceView
+        // is actually nil. So it crashes. Making it optional fixes the problem.
+        // if it's nil, call for setNeedsDisplay is ignored.
+        faceView?.setNeedsDisplay()
     }
     
     func smilinessForFaceView(sender: FaceView) -> Double? {

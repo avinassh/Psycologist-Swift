@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiagnosedHappinessViewController: HappinessViewController {
+class DiagnosedHappinessViewController: HappinessViewController, UIPopoverPresentationControllerDelegate {
     
     // following array will be created whenever a button is pressed. So its not
     // really saving the history. Hence lets use NSUserDefaults
@@ -43,11 +43,21 @@ class DiagnosedHappinessViewController: HappinessViewController {
             switch identifier {
             case History.segueIdentifier:
                 if let tvc = segue.destinationViewController as? TextViewController {
+                    // get popover presentation controller
+                    if let ppc = tvc.popoverPresentationController {
+                        // this essentially says, we will handover the popovers
+                        ppc.delegate = self
+                    }
                     tvc.text = "\(diagnosticHistory)"
                 }
             default: break
             }
         }
+    }
+    
+    // now following will disable modal presentation on iPhone
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
     }
     
 }
